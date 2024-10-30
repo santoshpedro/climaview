@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hackathon Clima View</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="./output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            overflow-y: scroll;
+            scroll-snap-type: y mandatory;
+        }
+
+        section {
+            scroll-snap-align: start;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body class="bg-gradient-to-r from-blue-900 via-blue-800 to-blue-900 text-white">
+
+    <!-- Navbar -->
+    <nav class="flex justify-between items-center py-6 px-10 bg-opacity-90 bg-blue-800 fixed w-full shadow-md z-10">
+        <a href="#" class="text-3xl font-extrabold">Clima View</a>
+        <ul class="hidden md:flex space-x-10">
+            <li><a href="#about" class="hover:text-green-400 transition">Sobre</a></li>
+            <li><a href="#objective" class="hover:text-green-400 transition">Objetivo</a></li>
+            <li><a href="#requirements" class="hover:text-green-400 transition">Requisitos</a></li>
+            <li><a href="#submission" class="hover:text-green-400 transition">Entrega</a></li>
+        </ul>
+        <a href="#signup"
+            class="hidden md:inline-block px-5 py-3 bg-green-500 rounded-full hover:bg-green-600 transition">Inscreva-se</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-r from-blue-900 to-blue-800 text-center">
+        <h1 class="text-5xl md:text-6xl font-extrabold mb-4">Hackathon Clima View</h1>
+        <p class="text-green-400 text-2xl mb-6">Desafie-se e explore o mundo do clima!</p>
+        <p class="text-gray-300 max-w-3xl mx-auto mb-8 text-lg text-center text-justify">
+            Participe do Hackathon Clima View, um evento exclusivo para os alunos do IFTM - Campus Ituiutaba. Desenvolva
+            uma plataforma interativa que explore dados climáticos em tempo real e exiba suas habilidades em frontend e
+            integração de APIs.
+        </p>
+        <a href="#signup"
+            class="px-8 py-4 bg-green-500 rounded-full text-lg font-semibold hover:bg-green-600 transition">Participe
+            Agora</a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="bg-blue-800 text-gray-300 flex flex-col md:flex-row items-center">
+        <div class="max-w-2xl text-center md:text-left p-6">
+            <h2 class="text-4xl font-bold text-white mb-6"><i class="fas fa-info-circle text-green-400"></i> Descrição
+                do Desafio</h2>
+            <p class="text-lg text-justify">
+                O Hackathon "Clima View" é exclusivo para alunos do IFTM campus Ituiutaba. Seu objetivo é criar uma
+                plataforma que permita a exploração de dados climáticos em tempo real. Utilize APIs de mapas e clima
+                para criar uma experiência dinâmica e envolvente.
+            </p>
+        </div>
+        <img src="./img/4KS02P3Ye9KNiV1RRyJ3Q.jpg" alt="Imagem do Desafio" width="600" height="600"
+            class="rounded-lg shadow-lg mt-8 md:mt-0 md:ml-6 w-1/3">
+    </section>
+
+    <!-- Objective Section -->
+    <section id="objective"
+        class="bg-gradient-to-r from-blue-900 to-blue-800 text-gray-300 flex flex-col md:flex-row items-center">
+        <div class="max-w-2xl text-center md:text-left p-6">
+            <h2 class="text-4xl font-bold text-white mb-6"><i class="fas fa-bullseye text-green-400"></i> Objetivo do
+                Desafio</h2>
+            <p class="text-lg text-justify">
+                Criar uma aplicação frontend que mostre informações climáticas em um mapa interativo, permitindo que os
+                usuários vejam o clima em qualquer cidade ou região. A interface deve ser intuitiva, responsiva e
+                visualmente atraente, oferecendo dados detalhados sobre o clima.
+            </p>
+        </div>
+        <img src="./img/GRqI4wxtY4RfVi43GPO4E.jpg" alt="Imagem do Objetivo" width="600" height="600"
+            class="rounded-lg shadow-lg mt-8 md:mt-0 md:ml-6 w-1/3">
+    </section>
+
+    <!-- Requirements Section -->
+    <section id="requirements" class="bg-blue-800 text-gray-300 flex flex-col items-center">
+        <div class="max-w-3xl text-center">
+            <h2 class="text-4xl font-bold text-white mb-8"><i class="fas fa-list text-green-400"></i> Requisitos do
+                Desafio</h2>
+            <ul class="space-y-6 text-left text-lg">
+                <li><i class="fas fa-desktop text-green-400"></i> <strong>Interface de Usuário:</strong> Desenvolver uma
+                    interface moderna e responsiva com temática de clima e natureza.</li>
+                <li><i class="fas fa-map-marked-alt text-green-400"></i> <strong>Funcionalidades:</strong> Exibir um
+                    mapa interativo, com informações climáticas ao selecionar uma localização específica.</li>
+                <li><i class="fas fa-cloud-sun text-green-400"></i> <strong>APIs:</strong> Utilizar uma API de mapas e
+                    uma API de dados climáticos para exibir informações em tempo real.</li>
+                <li><i class="fas fa-star text-green-400"></i> <strong>Bônus:</strong> Transições suaves e campo de
+                    busca para uma experiência imersiva.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Submission Section -->
+    <section id="submission" class="bg-gradient-to-r from-blue-900 to-blue-800 text-center text-gray-300">
+        <div class="max-w-3xl text-center">
+            <h2 class="text-4xl font-bold text-white mb-6"><i class="fas fa-upload text-green-400"></i> Entrega do
+                Produto</h2>
+            <p class="text-lg mb-8 text-justify">
+                Envie o código completo em um repositório público no GitHub, com README detalhado incluindo nome
+                completo, curso, período e instruções de como rodar a aplicação.
+            </p>
+            <div class="text-xl text-left">
+                <p><i class="fas fa-calendar-alt text-green-400"></i> Data de Lançamento: <strong>25/11/2024</strong>
+                </p>
+                <p><i class="fas fa-calendar-check text-green-400"></i> Data de Entrega: <strong>01/12/2024</strong></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Organizer Section -->
+    <section class="bg-blue-800 text-center text-gray-300">
+        <div class="max-w-2xl">
+            <h2 class="text-4xl font-bold text-white mb-6"><i class="fas fa-user-tie text-green-400"></i> Organização
+            </h2>
+            <p class="text-lg">Professor André Luiz França Batista</p>
+        </div>
+        <img src="./img/file.png" alt="Professor André Luiz França Batista" class="rounded-full shadow-lg mt-8 w-40">
+    </section>
+
+    <!-- Signup Section -->
+    <section id="signup" class="bg-green-500 text-center text-white">
+        <div>
+            <h2 class="text-4xl font-bold mb-6"><i class="fas fa-user-plus"></i> Participe do Clima View!</h2>
+            <p class="max-w-lg mx-auto text-lg mb-8">
+                Inscreva-se agora para fazer parte do Hackathon Clima View e demonstre seu talento em frontend e
+                integração de APIs.
+            </p>
+            <a href="https://forms.google.com" target="_blank"
+                class="px-10 py-4 bg-blue-800 rounded-full text-lg font-semibold hover:bg-blue-700 transition">Inscreva-se</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-6 bg-blue-800 text-center text-gray-400">
+        <p>&copy; 2024 Clima View Hackathon. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+
+</html>
